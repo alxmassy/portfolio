@@ -1,102 +1,213 @@
-import Image from "next/image";
-
+"use client";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-black text-green-400 font-mono">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm border-b border-green-400/20 z-50">
+        <div className="max-w-6xl mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+            <div className="text-xl">
+              <span className="text-green-400">alex@portfolio:~$</span>
+            </div>
+            <div className="flex space-x-8">
+              <a href="#about" className="hover:text-green-300 transition-colors">./about</a>
+              <a href="#projects" className="hover:text-green-300 transition-colors">./projects</a>
+              <a href="#skills" className="hover:text-green-300 transition-colors">./skills</a>
+              <a href="#contact" className="hover:text-green-300 transition-colors">./contact</a>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8">
+            <span className="text-green-300">alxmassy@dev:~$</span>
+            <span className="ml-2 animate-pulse">|</span>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <span className="text-white">Hello, I'm </span>
+            <span className="text-green-400">Alex Massy</span>
+          </h1>
+          <div className="text-xl md:text-2xl mb-8 space-y-2">
+            <p><span className="text-gray-400 italic">Intern @DRDO</span></p>
+            <p><span className="text-green-300">{'>'}</span> AI/ML Development</p>
+            <p><span className="text-green-300">{'>'}</span> Full-Stack Development</p>
+            <p><span className="text-green-300">{'>'}</span> Finance</p>
+          </div>
+          <div className="flex space-x-4">
+            <button onClick={()=>window.open('https://drive.google.com/file/d/1tLOqc9U2_DKWNEHT0rJvYuunFgljbVmd/view?usp=sharing','_blank')} className="px-6 py-3 border border-green-400 text-green-400 hover:bg-green-400 hover:text-black cursor-pointer transition-all duration-300">
+              ./view_resume
+            </button>
+            <button onClick={()=>window.open('https://www.linkedin.com/in/alex-massy-alx777/','_blank')} className="px-6 py-3 bg-green-400 text-black hover:bg-green-200 cursor-pointer transition-all duration-300">
+              ./linkedin
+            </button>
+            <button onClick={()=>window.open('https://www.github.com/alxmassy','_blank')} className="px-6 py-3 bg-green-400 text-black hover:bg-green-200 cursor-pointer transition-all duration-300">
+              ./github
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-6 border-t border-green-400/20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl mb-8">
+            <span className="text-green-300">alex@dev:~$</span> cat about.txt
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="space-y-4">
+              <p className="text-gray-300 leading-relaxed">
+                Hi! Welcome to my digital workspace. I'm a engineering student who loves
+                solving real world problems through code. I am a self taught developer with an 
+                interest for AI/ML and finance.
+              </p>
+              <p className="text-gray-300 leading-relaxed">
+                When I'm not debugging code at 3 AM, you'll find me exploring new 
+                technologies, or watching some random tech or gaming youtube videos.
+              </p>
+            </div>
+            <div className="bg-gray-900/50 p-6 rounded border border-green-400/20">
+              <h3 className="text-green-400 mb-4">// Quick stats</h3>
+              <div className="space-y-2 text-sm">
+                <p><span className="text-green-300">lines_of_code:</span> 50,000+</p>
+                <p><span className="text-green-300">coffee_consumed:</span> ∞</p>
+                <p><span className="text-green-300">bugs_fixed:</span> too_many_to_count</p>
+                <p><span className="text-green-300">status:</span> always_learning</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-20 px-6 border-t border-green-400/20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl mb-8">
+            <span className="text-green-300">alex@dev:~$</span> ls ./recent_projects
+          </h2>
+          <div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-gray-900/30 border border-green-400/20 p-6 hover:border-green-400/40 transition-all">
+                <h3 className="text-xl text-green-400 mb-2">fintel.exe</h3>
+                <p className="text-gray-300 text-sm mb-4">
+                  An ML system to predict short-term stock movement by leveraging news sentiment and technical analysis.
+                </p>
+                <div className="flex space-x-2 mb-4">
+                  <span className="text-xs bg-green-400/20 text-green-300 px-2 py-1">Python</span>
+                  <span className="text-xs bg-green-400/20 text-green-300 px-2 py-1">FinBERT</span>
+                  <span className="text-xs bg-green-400/20 text-green-300 px-2 py-1">XGBoost</span>
+                  <span className="text-xs bg-green-400/20 text-green-300 px-2 py-1">PostgreSQL</span>
+                </div>
+                <div className="flex space-x-4 text-sm">
+                  <a href="https://www.youtube.com/watch?v=6gytpbiClyE" target="_blank" className="text-green-400 hover:text-green-300">./demo</a>
+                  <a href="https://github.com/alxmassy/fintel" target="_blank" className="text-green-400 hover:text-green-300">./code</a>
+                </div>
+              </div>
+              <div className="bg-gray-900/30 border border-green-400/20 p-6 hover:border-green-400/40 transition-all">
+                <h3 className="text-xl text-green-400 mb-2">vidhiAI.exe</h3>
+                <p className="text-gray-300 text-sm mb-4">
+                  An AI tool that assists lawyers with legal case research by automating document parsing and info retrieval.
+                </p>
+                <div className="flex space-x-2 mb-4">
+                  <span className="text-xs bg-green-400/20 text-green-300 px-2 py-1">Python</span>
+                  <span className="text-xs bg-green-400/20 text-green-300 px-2 py-1">NLP</span>
+                  <span className="text-xs bg-green-400/20 text-green-300 px-2 py-1">HTML/CSS</span>
+                </div>
+                <div className="flex space-x-4 text-sm">
+                  <a href="https://www.youtube.com/watch?v=FTjgbdYyV84" target="_blank" className="text-green-400 hover:text-green-300">./demo</a>
+                  <a href="https://github.com/alxmassy/VidhiAI" target="_blank" className="text-green-400 hover:text-green-300">./code</a>
+                </div>
+              </div>
+              <div className="bg-gray-900/30 border border-green-400/20 p-6 hover:border-green-400/40 transition-all">
+                <h3 className="text-xl text-green-400 mb-2">phantom.exe</h3>
+                <p className="text-gray-300 text-sm mb-4">
+                  A cloud-connected kiosk system for document printing using a unique code and payment integration.
+                </p>
+                <div className="flex space-x-2 mb-4">
+                  <span className="text-xs bg-green-400/20 text-green-300 px-2 py-1">React</span>
+                  <span className="text-xs bg-green-400/20 text-green-300 px-2 py-1">Node.js</span>
+                  <span className="text-xs bg-green-400/20 text-green-300 px-2 py-1">Supabase</span>
+                </div>
+                <div className="flex space-x-4 text-sm">
+                  <a href="#" className="text-green-400 hover:text-green-300">./demo</a>
+                  <a href="#" className="text-green-400 hover:text-green-300">./code</a>
+                </div>
+              </div>
+            </div>          
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="py-20 px-6 border-t border-green-400/20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl mb-8">
+            <span className="text-green-300">alex@dev:~$</span> cat skills.json
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-green-400 mb-4">// Dev</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li>Python</li>
+                <li>C</li>
+                <li>ML Frameworks</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-green-400 mb-4">// Web</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>Node.js</li>
+                <li>Next.js</li>
+                <li>Restful API</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-green-400 mb-4">// Tools</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li>Git / GitHub</li>
+                <li>Docker</li>
+                <li>Jupyter Lab</li>
+                <li>Azure</li>
+                <li>Linux</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-6 border-t border-green-400/20">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl mb-8">
+            <span className="text-green-300">alex@dev:~$</span> ./connect
+          </h2>
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            Let's Connect! and build something amazing together.
+          </p>
+          <div className="flex justify-center space-x-6">
+            <a href="mailto:work.alexmassy@gmail.com" className="text-green-400 hover:text-green-300">
+              work.alexmassy@gmail.com
+            </a>
+            <a href="https://github.com/alxmassy" className="text-green-400 hover:text-green-300">
+              github.com/alxmassy
+            </a>
+            <a href="https://www.linkedin.com/in/alex-massy-alx777/" className="text-green-400 hover:text-green-300">
+              linkedin.com/in/alxmassy
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-green-400/20 py-8 px-6">
+        <div className="max-w-6xl mx-auto text-center text-gray-400">
+          <p>alex@dev:~$ echo "Made with ❤️"</p>
+        </div>
       </footer>
     </div>
   );
