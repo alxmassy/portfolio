@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Alxmassy",
-  description: "Portfolio of Alxmassy!",
+  title: "Alex Massy - Portfolio",
+  description: "AI/ML Developer & Full-Stack Engineer",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
@@ -24,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
