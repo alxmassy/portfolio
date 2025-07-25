@@ -44,7 +44,7 @@ export default function Home() {
             <p><span className="text-green-300">{'>'}</span> Finance</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <button onClick={()=>window.open('https://drive.google.com/file/d/1tLOqc9U2_DKWNEHT0rJvYuunFgljbVmd/view?usp=sharing','_blank')} className="w-full sm:w-auto px-4 sm:px-6 py-3 border border-green-400 text-green-400 hover:bg-green-400 hover:text-black cursor-pointer transition-all duration-300 text-center">
+            <button onClick={()=>window.open('https://drive.google.com/file/d/1mmibmRFAV3rrXukgzdppFZWdkHqGvEk3/view?usp=sharing','_blank')} className="w-full sm:w-auto px-4 sm:px-6 py-3 border border-green-400 text-green-400 hover:bg-green-400 hover:text-black cursor-pointer transition-all duration-300 text-center">
               ./view_resume
             </button>
             <button onClick={()=>window.open('https://www.linkedin.com/in/alex-massy-alx777/','_blank')} className="w-full sm:w-auto px-4 sm:px-6 py-3 bg-green-400 text-black hover:bg-green-200 cursor-pointer transition-all duration-300 text-center">
@@ -158,7 +158,7 @@ export default function Home() {
               <h3 className="text-green-400 mb-4 text-sm sm:text-base">// Dev</h3>
               <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
                 <li>Python</li>
-                <li>C</li>
+                <li>C/C++</li>
                 <li>ML Frameworks</li>
                 <li>PostgreSQL</li>
               </ul>
