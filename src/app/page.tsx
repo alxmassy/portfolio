@@ -39,9 +39,9 @@ export default function Home() {
           </h1>
           <div className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 space-y-1 sm:space-y-2">
             <p><span className="text-gray-400 italic">Intern @DRDO</span></p>
-            <p><span className="text-green-300">{'>'}</span> AI/ML Development</p>
-            <p><span className="text-green-300">{'>'}</span> Full-Stack Development</p>
-            <p><span className="text-green-300">{'>'}</span> Finance</p>
+            <p><span className="text-green-300">{'>'}</span> AI & ML Development</p>
+            <p><span className="text-green-300">{'>'}</span> Quant/FinTech</p>
+            <p><span className="text-green-300">{'>'}</span> Full-Stack Web Development</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <button onClick={()=>window.open('https://drive.google.com/file/d/1mmibmRFAV3rrXukgzdppFZWdkHqGvEk3/view?usp=sharing','_blank')} className="w-full sm:w-auto px-4 sm:px-6 py-3 border border-green-400 text-green-400 hover:bg-green-400 hover:text-black cursor-pointer transition-all duration-300 text-center">
@@ -159,17 +159,18 @@ export default function Home() {
               <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
                 <li>Python</li>
                 <li>C/C++</li>
-                <li>ML Frameworks</li>
-                <li>PostgreSQL</li>
+                <li>Pytorch</li>
+                <li>NLP</li>
+                <li>SQL/NoSQL</li>
               </ul>
             </div>
             <div>
               <h3 className="text-green-400 mb-4 text-sm sm:text-base">// Web</h3>
               <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
-                <li>React</li>
-                <li>Tailwind CSS</li>
+                <li>React.js</li>
                 <li>Node.js</li>
                 <li>Next.js</li>
+                <li>Tailwind CSS</li>
                 <li>Restful API</li>
               </ul>
             </div>
@@ -179,7 +180,7 @@ export default function Home() {
                 <li>Git / GitHub</li>
                 <li>Docker</li>
                 <li>Jupyter Lab</li>
-                <li>Azure</li>
+                <li>Azure Cloud</li>
                 <li>Linux</li>
               </ul>
             </div>
