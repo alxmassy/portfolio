@@ -23,7 +23,7 @@ export function Contact() {
         },
         {
             name: "Resume",
-            url: "https://drive.google.com/file/d/1wckGQxWGfsju3d7xdHrDbYomZkMIz9C-/view?usp=sharing",
+            url: "https://drive.google.com/file/d/1Ku8sCKXYGG3Kn4En5fKBrX2cMK6nV_GK/view?usp=sharing",
             icon: FileText,
             command: "cat resume.pdf",
         },
