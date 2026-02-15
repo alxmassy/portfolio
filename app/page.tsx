@@ -19,7 +19,7 @@ export default function Home() {
     { icon: Github, href: "https://github.com/alxmassy", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/alex-massy-alx777", label: "LinkedIn" },
     { icon: Mail, href: "mailto:work.alexmassy@gmail.com", label: "Email" },
-    { icon: FileText, href: "https://drive.google.com/file/d/1Ku8sCKXYGG3Kn4En5fKBrX2cMK6nV_GK/view?usp=sharing", label: "Resume" },
+    { icon: FileText, href: "https://drive.google.com/file/d/1oANfQ-rjmLCoMnt7SG1EbZpbThJXNOIe/view?usp=sharing", label: "Resume" },
   ];
 
   return (
