@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 export default function Hero() {
     const [text, setText] = useState("");
-    const fullText = "Backend Systems | AI ML";
+    const fullText = "Business | AI ML";
     const [isHovered, setIsHovered] = useState(false);
     const { scrollY } = useScroll();
 
